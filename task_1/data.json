@@ -6,12 +6,6 @@
         "course": "Computer Science"
     },
     {
-        "id": 2,
-        "name": "Rahul",
-        "age": 21,
-        "course": "Web Development"
-    },
-    {
         "id": 3,
         "name": "Deepanjana",
         "age": 23,
