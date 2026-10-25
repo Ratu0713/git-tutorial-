@@ -10,12 +10,12 @@
     <h1>TO-DO Form</h1>
 
     <form action="/submittodoitem" method="POST">
-        <label for="task">Task name</label>
+        <label for="task">Task name:</label>
         <input type="text" id="task" name="task" required>
 
         <br><br>
 
-        <label for="task_description">Description of Task</label>
+        <label for="task_description">Description of Task:</label>
         <input type="text" id="task_description"
                name="task_description" required>
 
@@ -30,9 +30,14 @@
 
     {% if item %}
         <h2>Submitted Item</h2>
+
         <label>Item ID:</label>
         <input type="text" value="{{ item.item_id }}" readonly>
+
+        <br><br>
+
+        <label>Item UUID:</label>
+        <input type="text" value="{{ item.item_uuid }}" readonly>
     {% endif %}
 </body>
 </html>
-
