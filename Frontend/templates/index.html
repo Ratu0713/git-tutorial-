@@ -29,10 +29,10 @@
     {% endif %}
 
     {% if item %}
-        <h2>Submitted Item</h2>
-        <label>Item ID:</label>
-        <input type="text" value="{{ item.item_id }}" readonly>
+        <h2>Generated Item Details</h2>
+        <p>Item ID: {{ item.item_id }}</p>
+        <p>Item UUID: {{ item.item_uuid }}</p>
+        <p>Item Hash: {{ item.item_hash }}</p>
     {% endif %}
 </body>
 </html>
-
