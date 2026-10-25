@@ -3,7 +3,11 @@ from flask import Flask, request, render_template
 import requests
 
 app = Flask(__name__)
+<<<<<<< HEAD
 BACKEND_URL = 'http://0.0.0.0:9000'
+=======
+BACKEND_URL = 'http://127.0.0.1:9000'
+>>>>>>> 81e8ae1 (Adding uuid)
 
 
 @app.route("/")
@@ -32,6 +36,7 @@ def submittodoitem():
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)
+<<<<<<< HEAD
 
 from flask import Flask, request, render_template
 import requests
@@ -66,3 +71,5 @@ def submittodoitem():
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)
+=======
+>>>>>>> 81e8ae1 (Adding uuid)
