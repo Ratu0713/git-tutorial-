@@ -12,7 +12,15 @@ def dashboardFrom():
 def submittodoitem():
     formdata=dict(request.form)
     requests.post(BACKEND_URL+"/submit",json=formdata)
-    return "Data submitted successfully"
+     response.raise_for_status()
+
+    result = response.json()
+
+    return render_template(
+        'index.html',
+        item=result["item"],
+        message="Data submitted successfully"
+    )
     
 
 if __name__=='__main__':
